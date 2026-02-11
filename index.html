@@ -79,6 +79,8 @@
         transition: transform 0.2s, box-shadow 0.2s;
         display: flex;
         flex-direction: column;
+        position: relative;
+        overflow: hidden;
     }
 
     .card:hover {
@@ -102,7 +104,36 @@
         color: var(--text-sub);
         margin-bottom: 20px;
         line-height: 1.5;
-        flex-grow: 1;
+    }
+
+    /* Example Games Box */
+    .example-box {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-left: 3px solid #4facfe;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .example-label {
+        display: block;
+        font-size: 0.7rem;
+        color: #4facfe;
+        font-weight: bold;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .example-list {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 0.85rem;
+        color: #ddd;
+    }
+    
+    .example-list li {
+        margin-bottom: 3px;
     }
 
     /* Meters */
@@ -147,8 +178,8 @@
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        margin-top: 10px;
-        padding-top: 10px;
+        margin-top: auto; /* Push to bottom */
+        padding-top: 15px;
         border-top: 1px dashed #444;
     }
 
@@ -180,8 +211,17 @@
                 <span class="genre-icon">⚡</span>
             </div>
             <p class="genre-desc">
-                直感的操作で誰でも即座に遊べる。短時間プレイの繰り返しで広告を表示させるモデル。SNS集客と相性が良い。
+                直感的操作で誰でも即座に遊べる。短時間プレイの繰り返し。
             </p>
+
+            <div class="example-box">
+                <span class="example-label">成功事例 (Web版)</span>
+                <ul class="example-list">
+                    <li>Crossy Road (Web版)</li>
+                    <li>Temple Run 2 (Web版)</li>
+                    <li>Dino Game (Chrome)</li>
+                </ul>
+            </div>
             
             <div class="meter-group">
                 <div class="meter-label"><span>開発難易度</span><span>低</span></div>
@@ -201,7 +241,6 @@
             <div class="tags">
                 <span class="tag">ランゲーム</span>
                 <span class="tag">スタック</span>
-                <span class="tag">バナー広告</span>
             </div>
         </div>
 
@@ -211,8 +250,17 @@
                 <span class="genre-icon">🧩</span>
             </div>
             <p class="genre-desc">
-                毎日少しずつ遊ぶ習慣化を狙う。詰まった時のヒントやスタミナ回復で収益化する安定型。
+                毎日少しずつ遊ぶ習慣化を狙う。主婦層やシニア層にも人気。
             </p>
+
+            <div class="example-box">
+                <span class="example-label">成功事例 (Web版)</span>
+                <ul class="example-list">
+                    <li>2048</li>
+                    <li>Candy Crush Saga (Web)</li>
+                    <li>Wordle (NYT)</li>
+                </ul>
+            </div>
             
             <div class="meter-group">
                 <div class="meter-label"><span>開発難易度</span><span>中</span></div>
@@ -232,7 +280,6 @@
             <div class="tags">
                 <span class="tag">3マッチ</span>
                 <span class="tag">ソリティア</span>
-                <span class="tag">ヒント課金</span>
             </div>
         </div>
 
@@ -242,8 +289,17 @@
                 <span class="genre-icon">⏳</span>
             </div>
             <p class="genre-desc">
-                放置しても進むが、動画を見ると報酬が倍になる仕組みで「リワード広告」の再生率が極めて高い。
+                放置しても進む。リワード広告（動画で報酬2倍など）と相性抜群。
             </p>
+
+            <div class="example-box">
+                <span class="example-label">成功事例 (Web版)</span>
+                <ul class="example-list">
+                    <li>Cookie Clicker</li>
+                    <li>Melvor Idle</li>
+                    <li>Adventure Capitalist</li>
+                </ul>
+            </div>
             
             <div class="meter-group">
                 <div class="meter-label"><span>開発難易度</span><span>中</span></div>
@@ -263,7 +319,6 @@
             <div class="tags">
                 <span class="tag">街づくり</span>
                 <span class="tag">インフレ系</span>
-                <span class="tag">リワード広告</span>
             </div>
         </div>
 
@@ -273,8 +328,17 @@
                 <span class="genre-icon">⚔️</span>
             </div>
             <p class="genre-desc">
-                リアルタイム対戦。中毒性が高くコミュニティができやすい。他者に見せびらかすスキンで稼ぐ。
+                リアルタイム対戦。スキン（見た目）販売や広告非表示で稼ぐ。
             </p>
+
+            <div class="example-box">
+                <span class="example-label">成功事例 (Web版)</span>
+                <ul class="example-list">
+                    <li>Agar.io</li>
+                    <li>Slither.io</li>
+                    <li>Krunker.io</li>
+                </ul>
+            </div>
             
             <div class="meter-group">
                 <div class="meter-label"><span>開発難易度</span><span>高</span></div>
@@ -293,8 +357,7 @@
 
             <div class="tags">
                 <span class="tag">サバイバル</span>
-                <span class="tag">陣取り</span>
-                <span class="tag">スキン販売</span>
+                <span class="tag">FPS</span>
             </div>
         </div>
 
@@ -304,8 +367,17 @@
                 <span class="genre-icon">🛡️</span>
             </div>
             <p class="genre-desc">
-                本格的なシステム。ユーザー数は少ないが、熱心なファンによる高額なアイテム課金が見込める。
+                本格的なRPGやシミュレーション。重課金ユーザーに支えられる。
             </p>
+
+            <div class="example-box">
+                <span class="example-label">成功事例 (Web版)</span>
+                <ul class="example-list">
+                    <li>グランブルーファンタジー</li>
+                    <li>Forge of Empires</li>
+                    <li>Hero Wars (Web版)</li>
+                </ul>
+            </div>
             
             <div class="meter-group">
                 <div class="meter-label"><span>開発難易度</span><span>最高</span></div>
@@ -323,9 +395,8 @@
             </div>
 
             <div class="tags">
-                <span class="tag">カードRPG</span>
                 <span class="tag">ガチャ</span>
-                <span class="tag">サブスク</span>
+                <span class="tag">GvG</span>
             </div>
         </div>
 
